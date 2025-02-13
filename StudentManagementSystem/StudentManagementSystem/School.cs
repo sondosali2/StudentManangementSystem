@@ -1,4 +1,4 @@
-﻿using StudentManagementSystem;
+using StudentManagementSystem;
 
 internal class School
 {
@@ -7,8 +7,8 @@ internal class School
 
     public School(List<Student> students = null, List<Course> courses = null)
     {
-        this.students = students ?? new List<Student>(); // Initialize if null
-        this.courses = courses ?? new List<Course>();   // Initialize if null
+        this.students = students ?? new List<Student>(); 
+        this.courses = courses ?? new List<Course>();   
     }
 
     public void displayallstudents()
@@ -25,7 +25,7 @@ internal class School
         Console.WriteLine("\nAll Courses:");
         foreach (var item in courses)
         {
-            Console.WriteLine(item.DisplayDetails()); // Display course details
+            Console.WriteLine(item.DisplayDetails()); 
         }
     }
 
